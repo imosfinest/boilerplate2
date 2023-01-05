@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url("/images/Gradient-Background.svg");
+    background-size: cover;
+    width: 70%;
+  }
+  
+/* NAVIGATION BAR */
+  nav {
+    margin-top: 35px;
+    margin-left: 465px;
+  }
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline;
+    
+  }
+
+  li a {
+    color: #000;
+    margin-right: 20px;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+li a.active {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+/* NAVIGATION STYLING ENDS */
+
+/* COMING SOON STYLING STARTS */
