@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-# boilerplate2
-This is a boilerplate for my team.
-Feel free to update this file.
- 
-=======
-Please Read me!!!!
+NYLVA BANK
+This is a repository for this project.
 
-
+This is suppose to be in a style guide.
 Fonts Used includes
 
 Heading 
@@ -18,5 +13,5 @@ Judson
 
 for the font sizes used please check each element and see the font size used, because diffrent font sizes were applied due to the design system created...
 
-For the colors also Make sure to check the color codes on the figma file.....
->>>>>>> development
+For the colors also Make sure to check the color codes on the figma file.
+
