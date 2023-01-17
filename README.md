@@ -2,8 +2,7 @@
 
 # nylva bank
 
-During my learning journey of html, css and javascript I decided to practice My skills on an analog clock that works and show
-real time. So this is it. You can make your suggestions too. Thank you
+
 
 ### Links
 
@@ -27,7 +26,7 @@ Kosisochukwu Emmanuel(Nuelsage
 
 OPARA GOODNESS
 
-- Website - [Opara Goodness (Goodness)] (https://github.com/imosfinest)
+- Website - [Opara Goodness (Goodness)](https://github.com/imosfinest)
 - Twitter - [@](https://)
 
 ## Style Guide
