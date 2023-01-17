@@ -1,3 +1,4 @@
+
 ![Design preview for Analog Clock](./design/Desktop%20preview.png)
 
 # nylva bank
@@ -27,21 +28,12 @@ Kosisochukwu Emmanuel(Nuelsage
 OPARA GOODNESS
 
 - Website - [Opara Goodness (Goodness)](https://github.com/imosfinest)
-- Twitter - [@](https://)
+- Twitter - [@imosfinest](https://www.twitter.com/imosfinest)
 
 ## Style Guide
 
 Please Read me!!!!
 
-Fonts Used includes
-
-Heading
-Archivo Black
-
-Body
-Judson
-
-for the font sizes used please check each element and see the font size used, because diffrent font sizes were applied due to the design system created...
 
 For the colors also Make sure to check the color codes on the figma file.....
-development
+development 
