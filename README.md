@@ -1,5 +1,5 @@
 
-![Design preview for Analog Clock](./design/Desktop%20preview.png)
+![Design preview for nylva bank]()
 
 # nylva bank
 
