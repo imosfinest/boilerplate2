@@ -1,0 +1,70 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+ }
+
+ body{
+     background-color: white;
+ }
+
+ nav{
+    /* background-color: coral; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3px;
+    padding-left:30px;
+    padding-right:30px;
+ }
+
+ .logo img{
+    width:80px; 
+ }
+
+ .links ul{
+    list-style-type:none;
+ }
+
+ .links ul li{
+    display:inline;
+  }
+
+ .links ul li a{
+    color: #000;
+    /* font-family:'Raleway', sans-serif; */
+    font-size:14px;
+    text-decoration: none;
+    padding: 10px;
+ }
+
+.links li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.button {
+    background-color: #1C53A4;
+    border-radius: 5px;
+}
+
+
+/* MEDIA QUERY FOR NAVIGATION BAR */
+ @media screen and (max-width: 600px) {
+ .links ul li{
+  display: inline;
+ }
+
+ .links ul li a{
+  font-size: 0.875em;
+  padding: 0;
+ }
+  }
+ 
+/* END OF NAVIGATION BAR  */
+
+/* STYLING FOR HERO SECTION */
+.hero-section{
+  background-image: url("../images/Gradient-Background.svg");
+}
+/* END STYLE FOR HERO SECTION */
