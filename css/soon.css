@@ -6,78 +6,155 @@
   box-sizing: border-box;
 }
 
+
 body {
+    margin: 0 auto;
     min-height: 100vh;
     background-image: url("/images/Gradient-Background.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    top: 50%;
+    right: 0;
+    left: 50%;
+    bottom: 0;
     width: 100%;
     font-family: 'Judson', serif;
-  }
-  
-/* NAVIGATION BAR */
-  nav {
-    margin-top: 35px;
-    text-align: center;
-    justify-content: center;
-    /* margin-left: 465px; */
-  }
-  ul {
-    list-style-type: none;
-  }
+    overflow-x: hidden;
+}
 
-  li {
-    display: inline;
+.container {
+    margin: 0 auto;
     
-  }
+      
+}
+  
 
-  li a {
-    color: #000;
-    margin-right: 20px;
-    padding: 8px 16px;
+
+header {
+    background-color: transparent;
+    /* position: fixed; */
+    width: 100%;
+    /* top: 0;
+    right: 0;
+    z-index: 1000; */
+    
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 40px 5%;
+    transition: all .50s ease;
+    height: 8vh;
+  
+}
+
+.navbar .logo img {
+    width: 200px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    
+}
+
+li {
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.nav-links a {
+    color: #313638;
+    font-weight: bold;
+    font-size: 1.1rem;
     text-decoration: none;
-  }
+    padding: 8px 16px;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
 
 li a:hover {
-  background-color: #555;
-  color: white;
+    background-color: #555;
+    color: #FDFFF5;
 }
 
-li a.active {
-  background-color: blue;
-  color: white;
-  border-radius: 5px;
-}
-/* NAVIGATION STYLING ENDS */
-
-/* COMING SOON STYLING STARTS */
-.coming-soon {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+li a:active {
+    color: #1C53A4;
 }
 
-.content {
-  width: 60%;
-  margin: 9rem 0 0 6rem;
-
+li .btn {
+    background-color: #1C53A4;
+    color: #FDFFF5;
+    border-radius: 5px;
 }
-.content .heading-text {
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 40px;
-  font-weight: bold;
-  color: #555;
-
+/* Mobile burger */
+.burger {
+    display: none;
+    cursor: pointer;
+  
+  }
+  .burger div{
+    background-color: #1C53A4;
+    width: 3rem;
+    height: 15px;
+    margin: 5px;
+    transition: all 0.3s ease;
+  /*Mobile burger stop */
   
 }
-.email {
-  display: inline-block;
-
+/* Page Styling start */
+.coming-soon {
+    margin-top: 2rem;
+    padding: 40px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
 }
-.email > form {
-  position: relative;
-  border: 1px solid #000;
-  border-radius: .3rem;
-  margin-top: 3rem;
+.coming-soon .heroIntroduction #intro {
+
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Archivo Black', sans-serif;
+    color: #1C53A4;
+
+   
+}
+  .heroIntroduction .heading-text {
+    margin: 20px 0 20px 0;
+    font-size: 45px;
+    color: #1C53A4;
+    font-family: 'Archivo Black, sans-serif';
+    font-weight: bold;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+  
+  }
+
+
+.heroIntroduction #motto {
+    font-size: 25px;
+    color: #313638;
+  }
+
+.heroIntroduction h3 {
+    font-size: 24px;
+    font-family: 'Archivo Black, sans-serif';
+    color: #1C53A4;
+    margin-top: 45px;
+  }
+
+
+.heroIntroduction > form {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #121212;
+    border-radius: .3rem;
+    margin-top: 15px;
 
 }
 
@@ -87,23 +164,23 @@ li a.active {
 
 input[type="text"]{
   border: none;
-  border-radius: .3rem;
-  width: 460px;
+  border-radius: 10px;
+  width: 500px;
   height: 51px;
   padding: 0 16px;
 }
 
-.btn {
+.btn-form {
   position: absolute;
   border-radius: .3rem;
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: darkgray;
-  color: white;
+  background-color: #1C53A4;
+  color: #FDFFF5;
   padding: 0 30px;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 18px;
   border: none;
   cursor: pointer;
 }
@@ -113,63 +190,225 @@ button:hover{
   background-color: #6c6c6c;
 }
 
-.mobile-ui {
-  position: relative;
-  width: 40%;
-  margin-top: 9rem;
-  
+.heroImage img{
+    width: 450px;
+
 }
 
 
-.buystock  img {
-  position: absolute;
-  right: 480px;
-  bottom: 30px;
-}
-
-.money-sent img {
-  position: absolute;
-  right: 150px;
-  top: 255px;
-}
 .icon {
-  width: 30%;
-  margin-left: 5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-}
+    display: flex;
+    padding: 0 7%;
+    align-items: center;
+  }
+
 
 .icon img {
-  width: 35px;
-  height: 35px;
-  margin-left: 50px;
-}
-
-.icon p {
-  font-size: 17px;
-  font-weight: bold;
- 
-}
-/* COMING SOON STYLING ENDS */
-
-/* FOOTER ATTRIBUTION STYLING STARTS */
-.attribution {
-  margin-top: 5rem;
-  text-align: center;
-  font-size: 15px;
-  color: #6c6c6c;
-  font-weight: bold;
-}
-
-/* FOOTER ATTRIBUTION STYLING ENDS */
-
-@media (min-width:1280px){
-  .coming-soon{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
+    width: 35px;
   }
   
+.icon p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+
+/* Page Styling start */
+
+  /* FOOTER ATTRIBUTION STYLING STARTS */
+.attribution {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 15px;
+    color: #6c6c6c;
+    font-weight: bold;
+  }
+  
+  /* FOOTER ATTRIBUTION STYLING ENDS */
+  
+@media (width:1024px){
+    body {
+      width: 1090px;
+      overflow-x: hidden;
+        
+    }
+
+    .heroImage img{
+        width: 400px;
+       
+}
+
+@media (min-width: 1440px){
+
+    body {
+        width: 1440px;
+        background-size: contain;
+        overflow-x: hidden;
+    }
+    .heroImage img{
+        width: 700px;
+    
+    }
+
+}
+
+@media (max-width: 1280px) {
+    header {
+        padding: 14px 2%;
+        transition: .2s ;
+    }
+
+    .nav-links a {
+        padding: 5px 10px;
+        margin: 0px 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .heroIntroduction {
+        margin-bottom: 4rem;
+    }
+    .coming-soon {
+        /* min-width: 70%; */
+        margin: 4rem;
+        grid-template-columns: 1fr;
+    }
+    body {
+        margin-top: 0 auto;
+        overflow-x: hidden;
+    }
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 8vh;
+        right: 0px;
+        width: 50%;
+        height: 29vh;
+        background-color: #334152;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all .50s ease;
+        transform: translateX(100%);
+    }
+
+    .nav-links a {
+        display: block;
+        margin: 12px 0;
+        /* padding: 0px 25px; */
+        color: #FDFFF5;
+        padding: 8px 16px;
+        /* margin: 0px 30px; */
+        transition: all .50s ease;
+
+    }
+
+    li a:hover {
+        background-color: #555;
+        color: #FDFFF5;
+        transform: translate(5px);
+    }
+    li .btn {
+        background-color: #1C53A4;
+        color: #FDFFF5;
+        border-radius: 5px;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-active {
+        transform: translateX(0%);
+    }
+/* Keyframe animation starts */
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+
+        }
+
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+
+        }
+        
+    }
+
+/* Keyframe animation ends */
+}
+
+@media screen and (max-width:425px) {
+    .heroIntroduction #motto {
+        font-size: 14px;
+      }
+    .email > form ::placeholder {
+        font-size: 19px;
+    }
+      
+    input[type="text"]{
+        width: 300px;
+        height: 30px;
+        padding: 0 16px;
+    }
+    .btn-form {
+        padding: 0 10px;
+        font-size: 10px;
+      }
+
+    .heroImage img{
+        width: 200px;
+    
+    }
+
+    .coming-soon {
+        padding: 0 1%;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    
+}
+
+@media screen and (max-width:375px){
+    body {
+        overflow-x: hidden;
+    }
+    .heroIntroduction #motto {
+        font-size: 16px;
+      }
+
+    .heroIntroduction h3 {
+        font-size: 14px;
+    }
+    .email > form ::placeholder {
+        font-size: 1px;
+    }
+      
+    input[type="text"]{
+        width: 250px;
+        height: 30px;
+    }
+    .btn-form {
+        padding: 0 7px;
+        font-size: 9px;
+      }
+
+
+}
+
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+
+}
+
+.toggle .line2 {
+    transform: rotate(45deg) translate(-5px, -6px);
+
 }
