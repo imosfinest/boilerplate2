@@ -20,7 +20,7 @@
 
 ## Author && Contributors
 
-Kosisochukwu Emmanuel(Nuelsage
+Kosisochukwu Emmanuel(Nuelsage)
 
 - Website - [Kosisochukwu Emmanuel(Nuelsage)](https://www.twitter.com/nuel2sage)
 - Twitter - [@nuel2sage](https://www.twitter.com/nuelsage)
@@ -29,6 +29,13 @@ OPARA GOODNESS
 
 - Website - [Opara Goodness (Goodness)](https://github.com/imosfinest)
 - Twitter - [@imosfinest](https://www.twitter.com/imosfinest)
+
+NENYE JESSICA
+
+- Twitter - [@cup_of_extra](https://twitter.com/cup_of_extra)
+
+
+
 
 
 ## Style Guide
