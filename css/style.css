@@ -1,184 +1,221 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Judson&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Judson&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-      max-width: 100%;
-      overflow-x: hidden;
-      margin: 0 auto;
-      min-height: 100vh;
-      font-family: 'Judson', serif;
-  }
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: "Judson", serif;
+  background-image: url(../images/background-image.svg);
+  /* background-image: url(../images/home-background.svg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center center;
+}
 
+.container {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+/* MAIN HEADER FOR ALL PAGES  APART FROM COMING SOON */
 header {
-    width: 100%;
-    /* background-color: red; */
-    position: fixed;
+  width: 100%;
+  /* background-color: red; */
+  position: fixed;
+  background-color: #fdfff5;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #FDFFF5;
-    padding: 40px 5%;
-    transition: all .50s ease;
-    height: 8vh;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
-    
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #fdfff5; */
+  padding: 40px 5%;
+  transition: all 0.5s ease;
+  height: 8vh;
+  /* box-shadow: 5px 5px 5px rgba(0, 0, 0, .1); */
 }
 
-
 .navbar .logo img {
-    width: 150px;
+  width: 150px;
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
-    
+  display: flex;
+  align-items: center;
 }
 
 li {
-    list-style-type: none;
-    font-weight: 400;
-    font-size: 15px;
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .nav-links a {
-    color: #313638;
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-decoration: none;
-    padding: 8px 16px;
-    margin: 0px 30px;
-    transition: all .50s ease;
+  color: #313638;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 0px 30px;
+  transition: all 0.5s ease;
 }
 
 li a:hover {
-    background-color: #555;
-    color: #FDFFF5;
+  background-color: #555;
+  color: #fdfff5;
 }
 
 li a:active {
-    color: #1C53A4;
+  color: #1c53a4;
 }
 
 .nav-links .btn {
-    background-color: #1C53A4;
-    color: #FDFFF5;
-    border-radius: 5px;
+  background-color: #1c53a4;
+  color: #fdfff5;
+  border-radius: 5px;
 }
 
 /* Mobile burger */
 .burger {
-    display: none;
-    cursor: pointer;
-  
-  }
-  .burger div{
-    background-color: #1C53A4;
-    width: 2rem;
-    height: 5px;
-    margin: 5px;
-    transition: all 0.3s ease;
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  background-color: #1c53a4;
+  width: 2rem;
+  height: 5px;
+  margin: 5px;
+  transition: all 0.3s ease;
   /*Mobile burger stop */
-  
 }
 
-
-
+/* HERO SECTION */
+.hero-section {
+  max-width: 100%;
+  margin-top: 7em;
+  padding: 40px 4%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.hero-content .caption{
+    font-size: 56px;
+    color: #1C53A4;
+    font-weight: 900;
+    font-family: "Archivo black", sans-serif;
+}
+.goal{
+    font-size: 30px;
+    color: #313638;
+    margin: 2.5rem 0 2.5rem 0;
+}
+.btn{
+    background-color: #1C53A4;
+    color: #FDFFF5;
+    border-radius: 0.3rem;
+    padding: 10px 2rem;
+    border: none;
+}
+.illustration-container img{
+    width: 450px;
+}
 /* Media Query starts */
 
 @media (max-width: 768px) {
-    .burger {
-        display: block;
+  .burger {
+    display: block;
+  }
+  .hero-section{
+    margin-top: 4em;
+    grid-template-columns: 1fr;
+    
+}
+
+  .nav-links {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 70%;
+    height: 80vh;
+    background-color: #334152;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.5s ease;
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+
+  .nav-links a {
+    display: block;
+    margin: 12px 0;
+    /* padding: 0px 25px; */
+    color: #fdfff5;
+    padding: 8px 16px;
+    /* margin: 0px 30px; */
+    transition: all 0.5s ease;
+  }
+
+  li a:hover {
+    background-color: #555;
+    color: #fdfff5;
+    transform: translate(5px);
+  }
+  li .btn {
+    background-color: #1c53a4;
+    color: #fdfff5;
+    border-radius: 5px;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  .show {
+    visibility: visible;
+  }
+  /* Keyframe animation starts */
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
     }
 
-    .nav-links {
-        position: absolute;
-        top: 0;
-        right: 0px;
-        width: 70%;
-        height: 80vh;
-        background-color: #334152;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: all .50s ease;
-        transform: translateX(-100%);
-        visibility: hidden;
+    to {
+      opacity: 1;
+      transform: translateX(-0px);
     }
+  }
 
-    .nav-links a {
-        display: block;
-        margin: 12px 0;
-        /* padding: 0px 25px; */
-        color: #FDFFF5;
-        padding: 8px 16px;
-        /* margin: 0px 30px; */
-        transition: all .50s ease;
-
-    }
-
-    li a:hover {
-        background-color: #555;
-        color: #FDFFF5;
-        transform: translate(5px);
-    }
-    li .btn {
-        background-color: #1C53A4;
-        color: #FDFFF5;
-        border-radius: 5px;
-    }
-
-    .nav-links li {
-        opacity: 0;
-    }
-    .nav-active {
-        transform: translateX(0%);
-    }
-
-    .show {
-        visibility: visible;
-    }
-/* Keyframe animation starts */
-    @keyframes navLinkFade {
-        from{
-            opacity: 0;
-            transform: translateX(-50px);
-
-        }
-
-        to{
-            opacity: 1;
-            transform: translateX(-0px);
-
-        }
-        
-    }
-
-/* Keyframe animation ends */
+  /* Keyframe animation ends */
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 .toggle .line2 {
-    opacity: 0;
-
+  opacity: 0;
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-
+  transform: rotate(45deg) translate(-5px, -6px);
 }
-
-
