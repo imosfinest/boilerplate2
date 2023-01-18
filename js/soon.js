@@ -26,7 +26,7 @@ navSlide();
 
 //MAIL SUBSCRIPTION LIST 
 
-  const scriptURL = '<SCRIPT URL>'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyuDCRiNzoFRLU0DdMqGZ_Iu9J2CytwP_GY3xHihdS62j-d3qG2318UpQiw6ENT5yZ7Sg/exec'
   const form = document.forms['submit-to-google-sheet']
 
   form.addEventListener('submit', e => {
