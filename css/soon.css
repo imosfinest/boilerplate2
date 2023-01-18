@@ -160,14 +160,10 @@ li .btn {
     border: 1px solid #121212;
     border-radius: .3rem;
     margin-top: 15px;
+    margin-bottom: 5px;
 
 }
-.heroIntroduction #msg{
-  font-size: 15px;
-   color: #1C53A4;
-  padding-top: 4rem;
-  
-}
+
 
 .email > form ::placeholder {
   font-size: 19px;
