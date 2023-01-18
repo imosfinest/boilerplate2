@@ -1,5 +1,5 @@
 
-![Design preview for Analog Clock](./design/Desktop%20preview.png)
+![Design preview for nylva bank]()
 
 # nylva bank
 
@@ -7,8 +7,8 @@
 
 ### Links
 
-- Solution URL: [here](https://)
-- Live Site URL: [here](https://)
+- Solution URL: [https://github.com/imosfinest/nylva-bank]
+- Live Site URL: [https://nylva.netlify.app/]
 
 ### Built with
 

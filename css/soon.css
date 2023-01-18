@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
     background-image: url("/images/Gradient-Background.svg");
     background-size: cover;
-    background-position: center center center;
+    background-position: center center;
     background-repeat: no-repeat;
     font-family: 'Judson', serif;
 }
@@ -160,7 +160,13 @@ li .btn {
     border: 1px solid #121212;
     border-radius: .3rem;
     margin-top: 15px;
+    margin-bottom: 5px;
 
+}
+
+.heroIntroduction > #msg{
+  color: #1C53A4;
+  font-size: 15px;
 }
 
 .email > form ::placeholder {
@@ -249,7 +255,7 @@ button:hover{
 
     body {
         width: 1440px;
-        background-size: contain;
+        /*background-size: contain;*/
         overflow-x: hidden;
     }
     .heroImage img{
@@ -261,7 +267,7 @@ button:hover{
 
 @media (max-width: 1280px) {
     header {
-        padding: 14px 2%;
+        padding: 0 2%;
         transition: .2s ;
     }
 
@@ -304,7 +310,7 @@ button:hover{
         top: 0;
         right: 0px;
         width: 70%;
-        height: 29vh;
+        height: 33vh;
         background-color: #334152;
         display: flex;
         flex-direction: column;
