@@ -164,6 +164,10 @@ li .btn {
 
 }
 
+.heroIntroduction > #msg{
+  color: #1C53A4;
+  font-size: 15px;
+}
 
 .email > form ::placeholder {
   font-size: 19px;
