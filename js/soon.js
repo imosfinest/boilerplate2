@@ -45,3 +45,14 @@ fetch(scriptURL, { method: 'POST', body: new FormData(form)}).then(response => {
   
       .catch(error => console.error('Error!', error.message))
 })
+
+//form Validation 
+
+// let emailField = document.getElementById('emailField');
+// let emailError = document.getElementById('emailError');
+
+// function validateEmail(){
+//     if(emailField.ariaValueMax.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.])){
+
+//     }
+// }
