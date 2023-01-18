@@ -8,22 +8,31 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
+    <header>
    <!---Navigation bar start-->
-   <nav>
+   <nav class="navbar">
     <div class="logo">
         <img src="images/Logo.svg" alt="nylvia bank official logo">
     </div>
-    <div class="links">
-        <ul>
+    <!-- <div class="links"> -->
+        <ul class="nav-links">
             <li ><a style="color: #1C53A4;" href="#">Home</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Log in</a></li>
-            <li><a style="color: white;" href="#" class="button">Sign up</a></li> 
+            <li><a class="btn" href="home.html">Sign up</a></li>
         </ul>
+    <!-- </div> -->
+
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        
     </div>
 </nav>
 <!---Navigation bar end-->
+</header>
 
 <!-- HERO SECTION START -->
 <section class="hero-section">
@@ -35,5 +44,6 @@
     </div>
 </section>
 <!-- HERO SECTION ENDS -->
+<script src="js/main.js"></script>
 </body>
 </html>
