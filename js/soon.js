@@ -29,12 +29,18 @@ navSlide();
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyuDCRiNzoFRLU0DdMqGZ_Iu9J2CytwP_GY3xHihdS62j-d3qG2318UpQiw6ENT5yZ7Sg/exec'
   const form = document.forms['submit-to-google-sheet']
   const mgs = document.getElementById("msg")
+  
 
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-    msg.innerHTML="Thank you for subscribing"
+    msg.innerHTML="Thank you for subscribing" 
+        setTimeout(function(){ msg.innerHTML="" 
+                             },5000)
+        form.reset()
     })
+  
+  
       .catch(error => console.error('Error!', error.message))
   })
