@@ -162,6 +162,12 @@ li .btn {
     margin-top: 15px;
 
 }
+#msg{
+  font-size: 15px;
+   color: #1C53A4;
+  margin-top: 1rem;
+  
+}
 
 .email > form ::placeholder {
   font-size: 19px;
