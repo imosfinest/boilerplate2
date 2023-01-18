@@ -8,37 +8,39 @@
 
 
 body {
+    max-width: 100%;
+    overflow-x: hidden;
     margin: 0 auto;
     min-height: 100vh;
     background-image: url("/images/Gradient-Background.svg");
     background-size: cover;
+    background-position: center center center;
     background-repeat: no-repeat;
-    top: 50%;
-    right: 0;
-    left: 50%;
-    bottom: 0;
-    width: 100%;
     font-family: 'Judson', serif;
-    overflow-x: hidden;
 }
-
-.container {
-    margin: 0 auto;
-    
-      
-}
-  
 
 
 header {
     background-color: transparent;
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
-    /* top: 0;
+    top: 0;
     right: 0;
-    z-index: 1000; */
+    z-index: 1000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
     
 }
+
+.container {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    
+      
+}
+
 
 /* NAVIGATION BAR */
 .navbar {
@@ -52,8 +54,9 @@ header {
   
 }
 
+
 .navbar .logo img {
-    width: 200px;
+    width: 150px;
 }
 
 .nav-links {
@@ -100,8 +103,8 @@ li .btn {
   }
   .burger div{
     background-color: #1C53A4;
-    width: 3rem;
-    height: 15px;
+    width: 2rem;
+    height: 5px;
     margin: 5px;
     transition: all 0.3s ease;
   /*Mobile burger stop */
@@ -109,6 +112,7 @@ li .btn {
 }
 /* Page Styling start */
 .coming-soon {
+    max-width: 100%;
     margin-top: 2rem;
     padding: 40px 7%;
     display: grid;
@@ -117,7 +121,6 @@ li .btn {
     
 }
 .coming-soon .heroIntroduction #intro {
-
     font-size: 25px;
     font-weight: bold;
     font-family: 'Archivo Black', sans-serif;
@@ -137,6 +140,8 @@ li .btn {
 
 
 .heroIntroduction #motto {
+    min-width: 100%;
+    position: relative;
     font-size: 25px;
     color: #313638;
   }
@@ -238,6 +243,8 @@ button:hover{
        
 }
 
+}
+
 @media (min-width: 1440px){
 
     body {
@@ -266,16 +273,26 @@ button:hover{
 }
 
 @media (max-width: 768px) {
+   
+    /* .container {
+            max-width: 90%;
+            background-color: red;
+            min-height: 100vh;
+    } */
+
+    @media (max-width: 768px) {
+        
+    } 
+
     .heroIntroduction {
         margin-bottom: 4rem;
     }
     .coming-soon {
-        /* min-width: 70%; */
         margin: 4rem;
         grid-template-columns: 1fr;
     }
     body {
-        margin-top: 0 auto;
+        /* margin: 0 auto; */
         overflow-x: hidden;
     }
     .burger {
@@ -284,16 +301,17 @@ button:hover{
 
     .nav-links {
         position: absolute;
-        top: 8vh;
+        top: 0;
         right: 0px;
-        width: 50%;
+        width: 70%;
         height: 29vh;
         background-color: #334152;
         display: flex;
         flex-direction: column;
         justify-content: center;
         transition: all .50s ease;
-        transform: translateX(100%);
+        transform: translateX(-100%);
+        visibility: hidden;
     }
 
     .nav-links a {
@@ -324,17 +342,21 @@ button:hover{
     .nav-active {
         transform: translateX(0%);
     }
+
+    .show {
+        visibility: visible;
+    }
 /* Keyframe animation starts */
     @keyframes navLinkFade {
         from{
             opacity: 0;
-            transform: translateX(50px);
+            transform: translateX(-50px);
 
         }
 
         to{
             opacity: 1;
-            transform: translateX(0px);
+            transform: translateX(-0px);
 
         }
         
@@ -344,6 +366,12 @@ button:hover{
 }
 
 @media screen and (max-width:425px) {
+    .burger div{
+        background-color: #1C53A4;
+        width: 1.4rem;
+        height: 3px;
+      
+    }
     .heroIntroduction #motto {
         font-size: 14px;
       }
