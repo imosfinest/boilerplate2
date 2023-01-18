@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Judson&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+body {
+      max-width: 100%;
+      overflow-x: hidden;
+      margin: 0 auto;
+      min-height: 100vh;
+      font-family: 'Judson', serif;
+  }
+
+header {
+    width: 100%;
+    /* background-color: red; */
+    /* position: fixed; */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FDFFF5;
+    padding: 40px 5%;
+    transition: all .50s ease;
+    height: 8vh;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
+    
+  
+}
+
+
+.navbar .logo img {
+    width: 150px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    
+}
+
+li {
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.nav-links a {
+    color: #313638;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 8px 9px;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+li a:hover {
+    background-color: #555;
+    color: #FDFFF5;
+}
+
+li a:active {
+    color: #1C53A4;
+}
+
+.nav-links li .btn {
+    background-color: #1C53A4;
+    padding: 8px 0;
+    color: #FDFFF5;
+    border-radius: 5px;
+}
+
+
