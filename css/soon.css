@@ -249,7 +249,7 @@ button:hover{
 
     body {
         width: 1440px;
-        background-size: contain;
+        /*background-size: contain;*/
         overflow-x: hidden;
     }
     .heroImage img{
