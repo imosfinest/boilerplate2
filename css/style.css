@@ -132,7 +132,7 @@ li a:active {
 .hero-content .caption {
   font-size: 56px;
   color: #1c53a4;
-  font-weight: 900;
+  font-weight: bold;
   font-family: "Archivo black", sans-serif;
 }
 .goal {
@@ -252,8 +252,8 @@ p {
   }
  .hero-content .caption{
    background-color: coral;
-  font-size: 16px;
-    
+  font-size: 1rem;
+   font-weight: 400;
   }
 }
 
