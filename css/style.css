@@ -244,14 +244,14 @@ p {
   .btn {
     padding: 8px 1rem;
   }
-  .goal {
+  .hero-content .goal {
     font-size: 15px;
   }
   .illustration-container img {
     width: 200px;
   }
  .hero-content .caption{
-  font-size: 30px;
+  font-size: 25px;
     
     
   }
