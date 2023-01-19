@@ -245,12 +245,13 @@ p {
     padding: 8px 1rem;
   }
   .hero-content .goal {
-    font-size: 15px;
+    font-size: 20px;
   }
   .illustration-container img {
     width: 200px;
   }
  .hero-content .caption{
+   background-color: coral;
   font-size: 25px;
     
     
