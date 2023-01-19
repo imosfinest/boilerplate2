@@ -44,11 +44,13 @@
         <h3>Launching soon, Get Notified</h3>
      
         <!-- FORM -->
-        <form name='submit-to-google-sheet'>
-          <input type="text" name="Email" placeholder="Enter Your Email address..." />
+        <form id="formvld" name='submit-to-google-sheet'>
+          <input id="email-field" spellcheck="false" type="email" name="Email" placeholder="Enter Your Email address..." />
           <button type="submit" class="btn-form">Notify Me</button>
         </form>
+        <span id="email-error"></span>
         <span id="msg"></span>
+        
         
       </div>
       <div class="heroImage">

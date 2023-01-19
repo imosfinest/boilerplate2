@@ -6,6 +6,18 @@
   box-sizing: border-box;
 }
 
+
+:root {
+  --blue: #1c53a4;
+  --green: #81c449;
+  --yellow: #ffb703;
+  --orange: #fb8500;
+  --red: #ff1f00;
+  --gray: #313638;
+  --milkcolour: #fdfff5;
+}
+
+
 body {
   max-width: 100%;
   overflow-x: hidden;
@@ -91,7 +103,10 @@ li a:active {
   color: #fdfff5;
   border-radius: 5px;
 }
-
+.nav-links .btn:hover {
+  transition: 0.8s;
+  background-color: rgb(158, 76, 76);
+}
 /* Mobile burger */
 .burger {
   display: none;
@@ -110,42 +125,202 @@ li a:active {
 .hero-section {
   max-width: 100%;
   margin-top: 7em;
-  padding: 40px 4%;
+  padding: 40px 5%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1.5fr;
 }
-.hero-content .caption{
-    font-size: 56px;
-    color: #1C53A4;
-    font-weight: 900;
-    font-family: "Archivo black", sans-serif;
+.hero-content .caption {
+  font-size: 56px;
+  color: #1c53a4;
+  font-weight: 900;
+  font-family: "Archivo black", sans-serif;
 }
-.goal{
-    font-size: 30px;
-    color: #313638;
-    margin: 2.5rem 0 2.5rem 0;
+.goal {
+  font-size: 30px;
+  color: #313638;
+  margin: 2.5rem 0 2.5rem 0;
+  text-align: start;
 }
-.btn{
-    background-color: #1C53A4;
-    color: #FDFFF5;
-    border-radius: 0.3rem;
-    padding: 10px 2rem;
-    border: none;
+.btn {
+  font-weight: bold;
+  background-color: #1c53a4;
+  color: #fdfff5;
+  border-radius: 0.3rem;
+  padding: 14px 2rem;
+  border: none;
 }
-.illustration-container img{
-    width: 450px;
+
+.btn:hover {
+  transition: 0.8s;
+  background-color: rgb(158, 76, 76);
 }
+.illustration-container img {
+  width: 500px;
+}
+
+/* FEATURES STYLING STARTS */
+.features-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h3 {
+  color: #1c53a4;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 15px;
+}
+.featuresIcon {
+  display: grid;
+  gap: 3em;
+  margin-bottom: 4em;
+}
+.cards {
+  background-color: var(--milkcolour);
+  width: 270px;
+  height: 180px;
+  border-radius: 0.8rem;
+}
+#card1,
+#card2,
+#card3 {
+  box-shadow: 2px 4px rgb(241, 235, 235);
+}
+#card1,
+#card3 {
+  border-top: 18px solid var(--blue);
+}
+#card2 {
+  border-top: 18px solid var(--green);
+}
+#card4,
+#card5,
+#card6 {
+  box-shadow: 2px 4px rgb(241, 235, 235);
+}
+#card4,
+#card6 {
+  border-bottom: 18px solid var(--blue);
+}
+#card5 {
+  border-bottom: 18px solid var(--green);
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+}
+p {
+  text-align: center;
+  font-size: 0.7em;
+  line-height: 17px;
+  padding-inline: 0.5rem;
+  word-spacing: 0.2rem;
+}
+
+@media screen and (max-width: 425px) {
+  /* feature starts */
+  .features-wrapper{
+
+    /* margin: 400px; */
+  }
+  .featuresIcon {
+    gap: 5em;
+  }
+  .cards {
+    width: 270px;
+    height: 150px;
+  }
+  /* feature ends */
+  /* hero section starts */
+  .btn {
+    padding: 8px 1rem;
+  }
+  .goal {
+    font-size: 15px;
+  }
+  .illustration-container img {
+    width: 200px;
+  }
+ .hero-content .caption{
+  font-size: 30px;
+    
+    
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .featuresIcon {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4em;
+  }
+  .cards {
+    width: 270px;
+    height: 190px;
+  }
+  h3 {
+    color: #1c53a4;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 800;
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width:1024px) {
+  
+ /* hero content starts */
+ .hero-content .caption {
+  font-size: 40px;
+ }
+ .goal {
+  font-size: 25px;
+ }
+  /* hero content stops */
+  
+}
+@media screen and (min-width: 950px) {
+ 
+  .featuresIcon {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em;
+  }
+  .cards {
+    background-color: var(--milkcolour);
+    width: 270px;
+    height: 180px;
+  }
+  h3 {
+    color: #1c53a4;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 800;
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+  }
+}
+/* FEATURES STYLING ENDS */
+
 /* Media Query starts */
 
 @media (max-width: 768px) {
   .burger {
     display: block;
   }
-  .hero-section{
+  .hero-section {
     margin-top: 4em;
     grid-template-columns: 1fr;
-    
-}
+  }
 
   .nav-links {
     position: absolute;
