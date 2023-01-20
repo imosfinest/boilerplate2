@@ -1,5 +1,5 @@
 .container-1, .text-area ,.image,.container-2, .text-area-2 ,.image-2,.container-3, .text-area-3 ,.image-3{
-    display: inline;
+    display: block;
 
     
 }
@@ -14,7 +14,7 @@
 
 .container-1{
     height: 400px;
-    width: 630px;
+    width: 700px;
     background-color: #1C53A4;
     border: none;
     border-radius: 20px;
@@ -23,7 +23,7 @@
 }
 .text-area{
     height: 395px;
-    width: 600px;
+    width: 730px;
     background-color: #7798C8;
     border: none;
     margin-left: 30px;
@@ -87,7 +87,7 @@
 }
 .container-2{
     height: 400px;
-    width: 630px;
+    width: 700px;
     background-color:  green;
     border: none;
     border-radius: 20px;
@@ -96,7 +96,7 @@
 }
 .text-area-2{
     height: 395px;
-    width: 600px;
+    width: 730px;
     background-color:  #81C449;
     border: none;
     margin-left: 0px;
@@ -124,7 +124,7 @@
     line-height: 20px;
 }
 .learn-more-2{
-    color: #1C53A4;
+    color: #81C449;
     font-size: 20px;
     background-color: white;
     padding-top: 15px;
@@ -143,7 +143,7 @@
 }
 .container-3{
     height: 400px;
-    width: 630px;
+    width: 700px;
     background-color: #1C53A4;
     border: none;
     border-radius: 20px;
@@ -152,7 +152,7 @@
 }
 .text-area-3{
     height: 395px;
-    width: 600px;
+    width: 730px;
     background-color: #7798C8;
     border: none;
     margin-left: 30px;
@@ -197,7 +197,6 @@
 }
 
     
-
-.container-4{
-    display: inline-flexbox;
+.container-4,.button-div{
+    position: absolute;
 }
