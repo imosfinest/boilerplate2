@@ -171,7 +171,7 @@ li .btn {
   font-size: 19px;
 }
 
-input[type="text"]{
+input[type="email"]{
   border: none;
   border-radius: 10px;
   width: 500px;
@@ -382,7 +382,7 @@ button:hover{
         font-size: 19px;
     }
       
-    input[type="text"]{
+    input[type="email"]{
         width: 300px;
         height: 30px;
         padding: 0 16px;
@@ -421,7 +421,7 @@ button:hover{
         font-size: 1px;
     }
       
-    input[type="text"]{
+    input[type="email"]{
         width: 250px;
         height: 30px;
     }
