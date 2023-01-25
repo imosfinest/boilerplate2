@@ -212,7 +212,12 @@ h3 {
 #card5 {
   border-bottom: 18px solid var(--green);
 }
-img {
+#featuresicon1,
+#featuresicon2,
+#featuresicon3,
+#featuresicon4,
+#featuresicon5,
+#featuresicon6 {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -714,39 +719,99 @@ p {
     /* APP DOWNLOAD END */
 
 .footer-section {
-  margin-top: 3rem;
-  background-color: red;
+  margin-top: 7rem;
+  /* padding-left: 3rem; */
+  /* background-color: red; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 4%;
+  /* padding: 4%; */
   align-items: left;
-  gap: 40px;
+  gap: 50px;
 }
+.footer-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 
+  display: inline-block;
+}
 .footer-logos .nylvaLogo {
-  width: 145px;
+  width: 200px;
   margin-bottom: 5rem;
   align-items: start;
   display: inline-block;
+  padding-left: 5.5rem;
 }
 
 .footer-icon {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* margin-top: 4rem; */
 
 }
 
 .footer-icon .footer-btn {
-  display: inline-block;
-  padding: 10px 35px;
+  padding: 5px 10px;
+  border-radius: .3rem;
+  border:none;
   background-color: #1c53a4;
   color:#fdfff5;
+  margin: 0;
+  cursor:pointer;
 }
 
 .footer-icon .google-play {
-  width: 155px;
+  width: 100px;
   margin-top:0;
+  margin-left: 1rem;
+  margin-right: 0;
+}
+
+.products .product-heading,
+.company-heading,
+.help-heading{
+  color: #1c53a4;
+  font-size: 30px;
+  /* text-align: center; */
+  font-family: 'Archivo Black', sans-serif;;
+
+}
+
+.products .card1-links {
+  list-style-type: none;
+
+}
+
+li a {
+  text-decoration: none;
+
+}
+
+.products .card1-links li,
+.card2-links li,
+.card3-links li{
+  line-height: 30px;
+  justify-content: center;
+
+}
+
+
+.twitter-icon {
+  display: flex;
+  padding: 0 7%;
+  align-items: center;
+}
+
+
+.twitter-icon img {
+  width: 35px;
+}
+
+.twitter-icon p {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* Media Query page starts */
