@@ -612,24 +612,141 @@ p {
 }
 /* FEATURES mediaquery STYLING ENDS */
 
-.phone-mockup {
+/* APP DOWNLOAD STARTS */
+
+.app-download {
   width: 100%;
-  height: 50vh;
-  background-color: red;
-  /* background-image: url(../images/Gradient-Background.svg); */
-  /* background-size: cover; */
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 6rem;
+  /* background-color: red; */
+  background-image: url(../images/footer-img.png);
+  background-size: cover;
+  background-position: center center;
   overflow: hidden;
+
+}
+
+.app-note {
+  font-size: 40px;
+  color: #000;
+  line-height: 45px;
+  word-spacing: 5px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.app-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-icon img {
+  margin: 0;
+  width: 150px;
+  margin-right: 6rem;
+  cursor: pointer;
 }
 
 
+.join {
+  background-color: white;
+  border: none;
+  border-radius: 0.3rem;
+  color: var(--blue);
+  padding: 10px 30px;
+  cursor: pointer;
+}
 
-.phone-mockup img {
-  max-width: 100%;
-  max-height: auto;
-  margin: 0;
-  padding: 0;
+.join:hover {
+  color: white;
+  background-color: var(--blue);
+  transition: all 0.5s ease-in-out;
+}
+
+
+@media screen and (max-width:768px) {
+  .app-download {
+      padding-right: 3rem;
+      height: 30vh;
+    }
+    .download-text .app-note {
+      font-size: 30px;
+      font-weight: 500;
+    }
+    
+    
+  }
+
+  @media screen and (max-width:425px) {
+    .app-download {
+      padding-right: 0;
+      justify-content: center;
+      }
+    .download-text .app-note {
+        font-size: 25px;
+        font-weight: 400;
+        margin-top: 2rem;
+        line-height: 25px;
+      }
+      .app-icon {
+        display: flex;
+        align-items: center;
+        justify-content:left;
+      }
+
+      .app-icon img {
+        margin: 0;
+        width: 90px;
+        margin-right: 2rem;
+        cursor: pointer;
+      }
+      
+      
+      .join {
+        padding: 5px 10px;
+      }
+    }
+
+    /* APP DOWNLOAD END */
+
+.footer-section {
+  margin-top: 3rem;
+  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 4%;
+  align-items: left;
+  gap: 40px;
+}
+
+.footer-logos .nylvaLogo {
+  width: 145px;
+  margin-bottom: 5rem;
+  align-items: start;
   display: inline-block;
- 
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.footer-icon .footer-btn {
+  display: inline-block;
+  padding: 10px 35px;
+  background-color: #1c53a4;
+  color:#fdfff5;
+}
+
+.footer-icon .google-play {
+  width: 155px;
+  margin-top:0;
 }
 
 /* Media Query page starts */
