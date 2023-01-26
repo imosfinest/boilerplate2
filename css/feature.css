@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: judson;
+}
+:root {
+  --blue: #1c53a4;
+
+  --green: #81c449;
+
+  --yellow: #ffb703;
+
+  --orange: #fb8500;
+
+  --red: #ff1f00;
+
+  --gray: #313638;
+
+  --milk_color: #fdfff5;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 2em;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.8em;
+  height: 300px;
+
+  padding-inline: 10px;
+}
+section {
+  width: 100%;
+  height: 90%;
+  max-width: 450px;
+}
+#explore,
+#purchase {
+  background-color: #b1c4e0;
+  border-radius: 8px 0 0 8px;
+  border-left: 18px solid var(--blue);
+}
+#stock {
+  background-color: #c0ec9c;
+  border-radius: 0 8px 8px 0;
+  border-right: 18px solid var(--green);
+}
+
+h3 {
+  font-family: "Archivo Black", sans-serif;
+  color: #fdfff5;
+  font-size: 1em;
+}
+p {
+  font-size: 1rem;
+  color: #fdfff5;
+}
+button {
+  background-color: #fdfff5;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 100px;
+  bottom: 50px;
+}
+
+.explorebutton,
+.buttonpurchase {
+  color: var(--blue);
+}
+.stockbutton {
+  color: var(--green);
+}
+@media screen and(min-width: 450px) {
+  section {
+    max-width: 410px;
+  }
+  h3 {
+    font-size: 4em;
+  }
+  p {
+    font-size: 8rem;
+  }
+  div {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    max-width: 650px;
+    display: flex;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .stock {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  body {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+  div {
+    height: 250px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  section {
+    max-width: 800px;
+    display: flex;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .stock {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  body {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+  div {
+    height: 250px;
+  }
+  button {
+    width: 150px;
+    left: 100px;
+  }
+}
