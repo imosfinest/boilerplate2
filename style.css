@@ -1,0 +1,260 @@
+*body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+        
+    
+
+
+.container-1,.container-3,.text-area, .text-area-3{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    
+   
+}
+
+   
+.heading{
+    font-family: 'Archivo Black', sans-serif;
+}
+.description, .learn-more{
+    font-family: 'Judson', serif;
+    
+}
+
+
+.container-1{
+    height: 400px;
+    width: 600px;
+    background-color: #1C53A4;
+    border: none;
+    border-radius: 20px;
+    margin-left: 20px;
+    
+}
+.text-area{
+    height: 395px;
+    width: 630px;
+    background-color: #7798C8;
+    border: none;
+    margin-left: 30px;
+    margin-right: 0px;
+    padding-top:5px;
+}
+
+    
+.heading{
+    color: white;
+    font-size: 35px;
+    font-weight:900;
+    margin-left: 90px;
+    margin-right: 0px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+
+}
+.description{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 90px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    
+}
+.learn-more{
+    color: #1C53A4;
+    width: 200px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 90px;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    
+}
+.learn-more:hover{
+    background-color: rgb(168, 168, 219);
+}
+
+.flexbox,.flexbox-2,.flexbox-3{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flexbox,.flexbox-2,.flexbox-3{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.flexbox-3{
+    display: flex;
+    justify-content: space-evenly;}
+.container-2{
+    height: 400px;
+    width: 660px;
+    background-color:  green;
+    border: none;
+    border-radius: 20px;
+    margin-left: 0px;
+    
+}
+.text-area-2{
+    height: 395px;
+    width: 630px;
+    background-color:  #81C449;
+    border: none;
+    margin-right: 30px;
+    margin-left:0px;
+    padding-top:5px;
+}
+
+    
+.heading-2{
+    color: white;
+    font-size: 35px;
+    font-weight:900;
+    margin-left: 90px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+}
+.description-2{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 90px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    line-height: 20px;
+}
+.learn-more-2{
+    width: 200px;
+    color: #81C449;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 90px;
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+
+}
+.learn-more-2:hover{
+    background-color: rgb(180, 219, 168);
+}
+.container-3{
+    height: 400px;
+    width: 600px;
+    background-color: #1C53A4;
+    border: none;
+    border-radius: 20px;
+    margin-left: 20px;
+    
+}
+.text-area-3{
+    height: 395px;
+    width: 630px;
+    background-color: #7798C8;
+    border: none;
+    margin-left: 30px;
+    margin-right: 0px;
+    padding-top:5px;
+}
+
+    
+.heading-3{
+    color: white;
+    font-size: 35px;
+    font-weight:900;
+    margin-left: 90px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+
+}
+.description-3{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 90px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.learn-more-3{
+    color: #1C53A4;
+    width: 200px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 90px;
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.learn-more-3:hover{
+    background-color: rgb(168, 168, 219);
+}
+.container-4{
+    position: relative;
+    
+}
+
+.text-block{
+    position: absolute;
+    width: 600px;
+    bottom: 200px;
+    left: 900px;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.text-block-2{
+    position: absolute;
+    width: 600px;
+    bottom: 120px;
+    left: 900px;
+       
+}
+ .google-button{
+    margin-left: 0px;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+ }
+ .google-button :hover{
+    background-color: #4c4757;
+    }
+ .nylva-button{
+    margin-left: 40px;
+    margin-right: 0px;
+    cursor: pointer;
+    transition: 0.5s;
+
+ }
+ .nylva-button :hover{
+    background-color: #4c4757;
+ }
