@@ -211,7 +211,7 @@ h3 {
 #card5 {
   border-bottom: 18px solid var(--green);
 }
-img {
+#featuresicon1, #featuresicon2, #featuresicon3, #featuresicon4, #featuresicon5, #featuresicon6{
   display: block;
   margin-left: auto;
   margin-right: auto;
