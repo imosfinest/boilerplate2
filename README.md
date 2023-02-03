@@ -32,8 +32,8 @@ OPARA GOODNESS
 
 Udo Uduak David
 
-- Website - [Udo Uduak (dev_udee)](https://github.com/imosfinest)
-- Twitter - [@imosfinest](https://www.twitter.com/imosfinest)
+- Website - [Udo Uduak (devudee)](https://github.com/devudee)
+- Twitter - [@imosfinest](https://www.twitter.com/ms_udee)
 
 NENYE JESSICA
 
