@@ -30,6 +30,11 @@ OPARA GOODNESS
 - Website - [Opara Goodness (Goodness)](https://github.com/imosfinest)
 - Twitter - [@imosfinest](https://www.twitter.com/imosfinest)
 
+Udo Uduak David
+
+- Website - [Udo Uduak (dev_udee)](https://github.com/imosfinest)
+- Twitter - [@imosfinest](https://www.twitter.com/imosfinest)
+
 NENYE JESSICA
 
 - Twitter - [@cup_of_extra](https://twitter.com/cup_of_extra)
